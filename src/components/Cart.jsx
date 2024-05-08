@@ -38,7 +38,6 @@ const Cart = () => {
                         <div style={{ textAlign: 'center', marginTop: '1rem', size: 'large' }}>
                             <Button type="primary" danger onClick={() => (romoveCart(product.id))}>Remove To Cart</Button>
                         </div>
-
                     </Card>
                 </div>
             </>

@@ -43,13 +43,10 @@ const login = () => {
                             <a href="#!" className="small text-muted me-1">Terms of use.</a>
                             <a href="#!" className="small text-muted">Privacy policy</a>
                         </div>
-
                     </MDBCardBody>
                 </MDBCol>
-
             </MDBRow>
         </MDBCard>
-
     </MDBContainer>
     return (
         <>

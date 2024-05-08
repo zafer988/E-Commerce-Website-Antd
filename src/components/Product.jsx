@@ -7,7 +7,6 @@ import { add } from '../Slice/CartSlice';
 const { Meta } = Card;
 
 const Product = () => {
-
     const data = useSelector(store => store.product.data)
     const dispatch = useDispatch()
     useEffect(() => {
@@ -27,8 +26,6 @@ const Product = () => {
             <>
 
                 <div className='col-md-4' style={{ marginBottom: '1rem' }} >
-
-                    {/*/ Spini Eğer burada verirsen döngü devam ettiği için her biri için loading döner ve her birinde loading gözükür */}
                     <Card
                         hoverable
                         style={{
@@ -39,7 +36,6 @@ const Product = () => {
                         <div style={{ textAlign: 'center', marginTop: '1rem', size: 'large' }}>
                             <Button type='primary' onClick={() => addToCart(product)}>Add To Cart</Button>
                         </div>
-
                     </Card>
                 </div>
 
@@ -49,7 +45,7 @@ const Product = () => {
     return (
         <>
             <Spin tip='Loading...' size='large' style={{ marginTop: '20rem' }} spinning={loading}>
-                {/*  O Yüzden burada vermelisin ki döngü bitmiş olur ve yükleme tamamlamlandığı için 1 loading gözükür */}
+
                 <div className='row'>
                     {cart}
                 </div>
@@ -57,5 +53,4 @@ const Product = () => {
         </>
     )
 }
-
 export default Product
